@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HP Printer Support | Replica</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .header {
+      background-color: #002c8b;
+      padding: 20px;
+      color: white;
+    }
+
+    .header .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (min-width: 768px) {
+      .header .container {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    .logo {
+      height: 40px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      width: 100%;
+    }
+
+    .nav {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .nav {
+        flex-direction: row;
+        gap: 20px;
+        justify-content: flex-end;
+      }
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-color: #e6eefc;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .search-box {
+      padding: 10px;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 300px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .footer {
+      background-color: #002c8b;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    /* button for call */
+    /* From Uiverse.io by adeladel522 */ 
+.button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(0 107 179);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.button:hover .icon {
+  transform: translate(4px);
+}
+
+.button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+
+.contactContainer {
+            text-align: center;
+            padding: 30px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+       .contactContainer  h2 {
+            color: #0056b3;
+        }
+
+       .contactContainer  p {
+            color: #555;
+
+        }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const input = document.querySelector(".search-box");
+      input.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          alert(`You searched for: ${input.value}`);
+        }
+      });
+    });
+
+    function callSupport() {
+            window.open('tel:+18774192884');
+        }
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <img src="https://in-media.apjonlinecdn.com/logo/stores/1/LogoHPblue_1.svg" style="margin: 0 auto" alt="HP Logo" class="logo" />
+      
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to HP Printer Support</h1>
+      <p>Find drivers, troubleshooting tips, and warranty info</p>
+      
+
+        <button class="button" onclick="callSupport()">
+            +18774192884
+            <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                <path
+                    clip-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    fill-rule="evenodd"
+                ></path>
+            </svg>
+        </button>
+  
+    </div>
+  </section>
+
+  <section class="content container" onclick="callSupport()
+  ">
+    <div class="card">
+      <h2>Download Drivers</h2>
+      <p>Get the latest drivers for your printer model from our driver library.</p>
+    </div>
+    <div class="card">
+      <h2>Fix Printing Issues</h2>
+      <p>Use HP Print and Scan Doctor to identify and solve printer issues quickly.</p>
+    </div>
+    <div class="card">
+      <h2>Check Warranty</h2>
+      <p>Enter your product serial number to check warranty status.</p>
+    </div>
+    <div class="card">
+      <h2>Setup Guides</h2>
+      <p>Follow our step-by-step installation and configuration guides.</p>
+    </div>
+    <div class="card">
+      <h2>Order Supplies</h2>
+      <p>Order ink, toner, and paper directly from HP.</p>
+    </div>
+    <div class="card">
+      <h2>Contact Support</h2>
+      <p>Need help? Get in touch with HP support team via chat, email, or call.</p>
+    </div>
+  </section>
+
+
+  <section class="content container">
+    
+    <div class="contactContainer">
+        <h2>Contact Us</h2>
+        <p style="margin-top: 12px;">If you need immediate assistance, call our customer support team:</p>
+        <button class="button" onclick="callSupport()" style="margin-top: 20px;">
+            +18774192884
+            <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                <path
+                    clip-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    fill-rule="evenodd"
+                ></path>
+            </svg>
+        </button>
+  
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 HP Support Replica </p>
+    </div>
+  </footer>
+</body>
+
+</html>
