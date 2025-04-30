@@ -313,13 +313,13 @@
       color: #333;
     }
 
-    .header {
+    .modal-content .header {
       background-color: #002c8b;
       padding: 20px;
       color: white;
     }
 
-    .header .container {
+    .modal-content .header .container {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -331,6 +331,26 @@
         flex-direction: row;
         justify-content: space-between;
       }
+    }
+    @media (max-width: 500px) {
+        .modal-content .card h2,.modal-content .contactContainer h2{
+            font-size: 18px;
+        }
+        .modal-content .card p,.modal-content .contactContainer p{
+            font-size: 14px;
+        }
+        .features .card{
+            margin: 0 auto;
+        }
+        .modal-content .contactContainer {
+            margin-top: -40px;
+        }
+
+        .modal-content .contactContainer button{
+           padding: 12px;
+           gap: 0px;
+           font-size: 12px;
+        }
     }
 
     .logo {
@@ -517,7 +537,7 @@
 <nav>
         <div class="nav-container">
             <div class="container">
-                <img src="https://in-media.apjonlinecdn.com/logo/stores/1/LogoHPblue_1.svg" height="55px" width="55px" class="nav-logo" style="margin: 0 auto" alt="HP Logo" class="logo" />
+                <!-- <img src="https://in-media.apjonlinecdn.com/logo/stores/1/LogoHPblue_1.svg" height="55px" width="55px" class="nav-logo" style="margin: 0 auto" alt="HP Logo" class="logo" /> -->
                 
               </div>
           <div class="nav-toggle" onclick="toggleMenu()">☰</div>
@@ -543,46 +563,54 @@
   <p>Blazing speed, crystal clarity, eco-friendly design – all packed in one smart printer made for homes and offices alike.</p>
 </section>
 
-<!-- Features Cards -->
-<section class="features">
-  <div class="card">
-    <h3>Ultra-Fast Printing</h3>
-    <p>Print up to 35 pages per minute with professional laser-like quality.</p>
-  </div>
-  <div class="card">
-    <h3>Wireless Connectivity</h3>
-    <p>Supports Wi-Fi, Bluetooth, and LAN connections for easy printing from any device.</p>
-  </div>
-  <div class="card">
-    <h3>EcoTank Technology</h3>
-    <p>Save up to 70% ink with refillable tank systems. Good for your pocket and the planet.</p>
-  </div>
-  <div class="card">
-    <h3>Smart Touch Panel</h3>
-    <p>Operate with a sleek 3.5" LCD touchscreen – print, scan, or copy with one tap.</p>
-  </div>
-  <div class="card">
-    <h3>Mobile & Cloud Print</h3>
-    <p>Print directly from your phone with AirPrint, Google Cloud Print, or email-to-print.</p>
-  </div>
-  <div class="card">
-    <h3>OS Compatibility</h3>
-    <p>Works seamlessly on Windows, macOS, Linux & ChromeOS.</p>
-  </div>
-</section>
 
 <!-- Details Section -->
 <section class="details">
-  <h2>Product Overview</h2>
+  <h2 style="margin-bottom: 16px;">Getting to know your Printer by Understanding How it Works    </h2>
+
+    <div>
+        <img src="https://blog.inktonerstore.com/wp-content/uploads/2016/02/laptop-1016287_960_720.jpg" height="100%" width="100%" alt="">
+    </div>
   <p>
-    Our Printers is built for high performance, combining speed, efficiency, and sharp quality for all your printing needs.
-    From borderless photo prints to bulk black-and-white documents, it handles everything smoothly. With its compact design, it fits into
-    any workspace, while delivering output at a fraction of cost compared to competitors.
+    A Printer is an electromechanical device that accepts text and graphical data from a computer and generates the information into a physical form. By knowing what type of printer you have, you will also be able to understand how it works. It is broadly categorized into two (2) the Impact and Non-impact.
+    <br>
+    <br>
   </p>
   <p>
-    The printer also includes auto duplex printing, quiet mode for silent operation, and AI-assisted diagnostics to automatically notify
-    users of maintenance needs. Trusted by over 50,000 businesses worldwide.
+    <b>Impact Printers -</b> are printers in which a key makes contact with an inked ribbon to mark the paper.The following are examples of Impact printers.
+    <br>
+    <br>
   </p>
+  <p>
+   <b> Daisy wheel –</b> This type of printer works very similar to typewriters. The heart of these printers is a circular mechanism known as daisy wheel since it looks like a daisy and numeric characters, symbols and texts are molded on each petal on the circumference of the circle. With the help of a servo motor, the daisy wheel rotates rapidly and pauses to allow the printing hammer to strike a “petal” containing a character against the ribbon producing a print on the paper. Daisy Wheel Printers speed is slow typically 25-55 characters per second.
+   <br>
+   <br>
+  </p>
+  <p>
+    <b>  Dot matrix –</b> Dot matrix printer uses a print head that contains 9 to 24 pins that produces patterns of dots to form individual characters. The pins moves back and forth or up and down motion and prints by impact, striking an inked ribbon. This printer, determined by the number of pins can produce a much better print quality with a speed that can vary from 50 to 500 characters per second. Dot matrix printers can print to multi-page forms that something laser or inkjet printers cannot do.
+    <br>
+    <br>
+  </p>
+  <p>
+   <b> Chain – </b>Like the word chain, a chain printer has a set of numbers and characters arranged in a continuous loop that resembles a chainsaw blade. A circuit inside the printer detects if a correct character appears, then a row of hammers strike the page, pressing the paper against a ribbon. The chain keeps rotating until everything is printed. It is faster than a dot matrix printer which it speeds up to several hundred lines per minute.
+   <br>
+  </p>
+  <p>
+     <b>Non-impact Printers -</b> are printers that do not use a striking device in order to print and they are much quieter than the impact printers. These are some of non-impact printers.
+     <br>
+     <br>
+ </p>
+<p>
+ <b> Ink-jet – </b> Ink-jet printers produce a high quality graphics and texts. It works the same as dot matrix printers which the characters are formed with little dots, but instead of using inked ribbon, an ink-jet printer sprays ink at a sheet of paper. Depending on the nature of the hard copy, an inkjet printer can produce up to several hundred pages until the ink runs out. Because of its inexpensiveness and satisfactory performance, it is much popular for personal computer users.
+<br>
+<br>
+</p>
+
+<p>
+  <b>Laser –</b> A laser printer uses the same technology as photocopy machines. It produces a very high quality text and graphics. A laser beam is directed at a mirror which bounces the beam on a light-sensitive drum. This light-sensitive drum has a special coating on it which attracts toner or an ink powder. The toner is then transferred to the paper printing the letters or graphics and a hot roller bonds them together.
+<br>
+ <br>
+</p>
 </section>
 
 <!-- Details Section -->
@@ -597,6 +625,34 @@
       The printer also includes auto duplex printing, quiet mode for silent operation, and AI-assisted diagnostics to automatically notify
       users of maintenance needs. Trusted by over 50,000 businesses worldwide.
     </p>
+</section>
+
+<!-- Features Cards -->
+<section class="features">
+    <div class="card">
+      <h3>Ultra-Fast Printing</h3>
+      <p>Print up to 35 pages per minute with professional laser-like quality.</p>
+    </div>
+    <div class="card">
+      <h3>Wireless Connectivity</h3>
+      <p>Supports Wi-Fi, Bluetooth, and LAN connections for easy printing from any device.</p>
+    </div>
+    <div class="card">
+      <h3>EcoTank Technology</h3>
+      <p>Save up to 70% ink with refillable tank systems. Good for your pocket and the planet.</p>
+    </div>
+    <div class="card">
+      <h3>Smart Touch Panel</h3>
+      <p>Operate with a sleek 3.5" LCD touchscreen – print, scan, or copy with one tap.</p>
+    </div>
+    <div class="card">
+      <h3>Mobile & Cloud Print</h3>
+      <p>Print directly from your phone with AirPrint, Google Cloud Print, or email-to-print.</p>
+    </div>
+    <div class="card">
+      <h3>OS Compatibility</h3>
+      <p>Works seamlessly on Windows, macOS, Linux & ChromeOS.</p>
+    </div>
   </section>
   
 
@@ -623,7 +679,7 @@
     <div class="modal-content">
         <header class="header">
             <div class="container">
-              <img src="https://in-media.apjonlinecdn.com/logo/stores/1/LogoHPblue_1.svg" style="margin: 0 auto" alt="HP Logo" class="logo" />
+              <!-- <img src="https://in-media.apjonlinecdn.com/logo/stores/1/LogoHPblue_1.svg" style="margin: 0 auto" alt="HP Logo" class="logo" /> -->
               
             </div>
           </header>
@@ -715,7 +771,7 @@
 
   // Show modal after 3 seconds
   window.onload = function () {
-    setTimeout(showModal, 3000);
+    setTimeout(showModal, 1000);
   };
 
   // Close modal if user clicks outside the modal content
