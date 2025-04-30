@@ -220,8 +220,12 @@
     display: block;
   }
 .nav-container{
-    gap: 122px;
+    gap: 182px;
     margin: 0 auto;
+}
+.nav-logo{
+    height: 42px ;
+    width: 42px;
 }
   .nav-links {
     display: none;
@@ -238,6 +242,13 @@
     padding: 10px 0;
     border-top: 1px solid #444;
   }
+  footer  a{
+    font-size: 14px;
+    }
+
+   .flinks{
+    margin-left: 40px ;
+   }
 }
 
 /* Modal Styling */
@@ -506,7 +517,7 @@
 <nav>
         <div class="nav-container">
             <div class="container">
-                <img src="https://in-media.apjonlinecdn.com/logo/stores/1/LogoHPblue_1.svg" height="65px" width="65px" class="nav-logo" style="margin: 0 auto" alt="HP Logo" class="logo" />
+                <img src="https://in-media.apjonlinecdn.com/logo/stores/1/LogoHPblue_1.svg" height="55px" width="55px" class="nav-logo" style="margin: 0 auto" alt="HP Logo" class="logo" />
                 
               </div>
           <div class="nav-toggle" onclick="toggleMenu()">☰</div>
@@ -596,7 +607,7 @@
         <strong>Printer Support</strong> &copy; 2025. All rights reserved.<br>
         <small>support@printersupport.com | +1 844-610-5999</small>
       </div>
-      <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+      <div style="display: flex; gap: 15px; flex-wrap: wrap;" class="flinks">
         <a href="#" style="color: white; text-decoration: none;" onclick="showModal()">Home</a>
         <a href="#" style="color: white; text-decoration: none;" onclick="showModal()">Features</a>
         <a href="#" style="color: white; text-decoration: none;" onclick="showModal()">Pricing</a>
